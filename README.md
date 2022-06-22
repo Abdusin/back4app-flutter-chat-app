@@ -1,17 +1,22 @@
-# message_app
+# Chat Application
 
-A new Flutter project.
+Messaging app powered by Back4app
 
-## Getting Started
+## Screenshots
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# back4app-flutter-chat-app" 
+<table>
+<tr>
+    <td>
+        <img src="screenshots/Screenshot_1655893568.png"></img>
+    </td>
+    <td>
+        <img src="screenshots/Screenshot_1655893770.png"></img>
+    </td>
+    <td>
+        <img src="screenshots/Screenshot_1655893764.png"></img>
+    </td>
+    <td>
+        <img src="screenshots/Screenshot_1655893803.png"></img>
+    </td>
+</tr>
+</table>
