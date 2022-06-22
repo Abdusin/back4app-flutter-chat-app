@@ -18,11 +18,13 @@ class NewGroupScreen extends StatelessWidget {
         init: NewGroupScreenController(groupModel: groupModel),
         builder: (controller) {
           return Scaffold(
-            floatingActionButton: FloatingActionButton(
-              onPressed: controller.deleteGroup,
-              child: const Icon(Icons.delete),
-              backgroundColor: Colors.red,
-            ),
+            floatingActionButton: groupModel != null
+                ? FloatingActionButton(
+                    onPressed: controller.deleteGroup,
+                    child: const Icon(Icons.delete),
+                    backgroundColor: Colors.red,
+                  )
+                : null,
             body: Stack(
               children: [
                 const DarkRadialBackground(

@@ -57,7 +57,7 @@ class MessagingScreenController extends GetxController {
 
   void sendMessage() {
     if (messageController.text.isNotEmpty) {
-      var newMessage = MessageObject()
+      MessageObject()
         ..set('fromUser', AppDatas.user!.toPointer())
         ..set('group', model.parseObject.toPointer())
         ..set('Message', messageController.text)
@@ -66,7 +66,6 @@ class MessagingScreenController extends GetxController {
       model.parseObject
         ..set('lastMessageDate', DateTime.now())
         ..save();
-      messages.add(newMessage);
       update();
       messageController.clear();
     }

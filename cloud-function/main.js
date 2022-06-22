@@ -122,3 +122,16 @@ Parse.Cloud.define('delete_group', async (request) => {
 
     return true;
 });
+
+Parse.Cloud.define('create_tables', async (request) => {
+    var Chats = new Parse.Object('Chats');
+    var Group = new Parse.Object('Group');
+    var GroupUser = new Parse.Object('Group_User');
+
+    await Promise.all([
+        Chats.save(),
+        Group.save(),
+        GroupUser.save(),
+    ]);
+    return true;
+});
